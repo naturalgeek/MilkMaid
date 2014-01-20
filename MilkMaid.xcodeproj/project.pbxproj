@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,8 +21,6 @@
 		768FC5C4114945B900B371DA /* RTMSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 768FC5C3114945B900B371DA /* RTMSearch.m */; };
 		76DF8422113B687400B2A3B2 /* ComboInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76DF8421113B687400B2A3B2 /* ComboInput.xib */; };
 		76DF8434113B693900B2A3B2 /* ComboInputWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76DF8433113B693900B2A3B2 /* ComboInputWindowController.m */; };
-		76EA44521111650700E10B8A /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76EA44511111650700E10B8A /* BWToolkitFramework.framework */; };
-		76EA44561111652500E10B8A /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76EA44511111650700E10B8A /* BWToolkitFramework.framework */; };
 		76EA44A4111167A500E10B8A /* EVRZRtmApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EA44A3111167A500E10B8A /* EVRZRtmApi.m */; };
 		76EA44BF1111682E00E10B8A /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EA44B41111682E00E10B8A /* NSObject+SBJSON.m */; };
 		76EA44C01111682E00E10B8A /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EA44B61111682E00E10B8A /* NSString+SBJSON.m */; };
@@ -36,6 +34,8 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B8751E22188DBE9E00CE5CB0 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8751E21188DBE9E00CE5CB0 /* BWToolkitFramework.framework */; };
+		B8751E23188DBFFA00CE5CB0 /* BWToolkitFramework.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8751E21188DBE9E00CE5CB0 /* BWToolkitFramework.framework */; };
 		C9041E77111280A200D0C6A3 /* RTMHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9041E76111280A200D0C6A3 /* RTMHelper.m */; };
 		C927F87B1120FC1B00EA191B /* rtm2.icns in Resources */ = {isa = PBXBuildFile; fileRef = C927F87A1120FC1B00EA191B /* rtm2.icns */; };
 		C9A02F2C111BF11F00ACBFE1 /* NSDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A02F2A111BF11F00ACBFE1 /* NSDateHelper.m */; };
@@ -58,7 +58,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				76FD5BDD11415BA2004C2E10 /* Sparkle.framework in CopyFiles */,
-				76EA44561111652500E10B8A /* BWToolkitFramework.framework in CopyFiles */,
+				B8751E23188DBFFA00CE5CB0 /* BWToolkitFramework.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +93,6 @@
 		76DF8421113B687400B2A3B2 /* ComboInput.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComboInput.xib; sourceTree = "<group>"; };
 		76DF8432113B693900B2A3B2 /* ComboInputWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboInputWindowController.h; sourceTree = "<group>"; };
 		76DF8433113B693900B2A3B2 /* ComboInputWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboInputWindowController.m; sourceTree = "<group>"; };
-		76EA44511111650700E10B8A /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = ../../../lib/BWToolkit/BWToolkitFramework.framework; sourceTree = SOURCE_ROOT; };
 		76EA44A2111167A500E10B8A /* EVRZRtmApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVRZRtmApi.h; sourceTree = "<group>"; };
 		76EA44A3111167A500E10B8A /* EVRZRtmApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVRZRtmApi.m; sourceTree = "<group>"; };
 		76EA44B21111682E00E10B8A /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -112,6 +111,7 @@
 		76F79642111DD45900FD7EFB /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		76FD5BB511415A04004C2E10 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* MilkMaid-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MilkMaid-Info.plist"; sourceTree = "<group>"; };
+		B8751E21188DBE9E00CE5CB0 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = ../../Downloads/BWToolkit/BWToolkitFramework.framework; sourceTree = "<group>"; };
 		C9041E75111280A200D0C6A3 /* RTMHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMHelper.h; sourceTree = "<group>"; };
 		C9041E76111280A200D0C6A3 /* RTMHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMHelper.m; sourceTree = "<group>"; };
 		C927F87A1120FC1B00EA191B /* rtm2.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = rtm2.icns; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				76EA44521111650700E10B8A /* BWToolkitFramework.framework in Frameworks */,
+				B8751E22188DBE9E00CE5CB0 /* BWToolkitFramework.framework in Frameworks */,
 				76FD5BB611415A04004C2E10 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,9 +158,9 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8751E21188DBE9E00CE5CB0 /* BWToolkitFramework.framework */,
 				76FD5BB511415A04004C2E10 /* Sparkle.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-				76EA44511111650700E10B8A /* BWToolkitFramework.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -342,11 +342,16 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = JGA;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MilkMaid" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* MilkMaid */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -436,11 +441,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../lib/BWToolkit\"",
-					"\"$(SRCROOT)\"",
+					"\\\"$(SRCROOT)/../../../lib/BWToolkit\\\"",
+					"$(SRCROOT)",
+					/Users/martijnv/Downloads/BWToolkit,
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -458,11 +465,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../lib/BWToolkit\"",
-					"\"$(SRCROOT)\"",
+					"\\\"$(SRCROOT)/../../../lib/BWToolkit\\\"",
+					"$(SRCROOT)",
+					/Users/martijnv/Downloads/BWToolkit,
 				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -476,26 +485,24 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};

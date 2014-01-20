@@ -2,3 +2,19 @@ build
 *.mode1v3
 *.pbxuser
 *.perspectivev3
+
+*.xcuserstate
+
+*.xcsettings
+
+*.xcscheme
+
+MilkMaid.xcodeproj/xcuserdata/martijnv.xcuserdatad/xcschemes/xcschememanagement.plist
+
+MilkMaid.xib.original
+
+MilkMaid.xib 2.original
+
+*.xccheckout
+
+*.xcworkspacedata
