@@ -32,7 +32,7 @@
 		76EA44C41111682E00E10B8A /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EA44BE1111682E00E10B8A /* SBJsonWriter.m */; };
 		76F79643111DD45900FD7EFB /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 76F79642111DD45900FD7EFB /* dsa_pub.pem */; };
 		76FD5BB611415A04004C2E10 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FD5BB511415A04004C2E10 /* Sparkle.framework */; };
-		76FD5BDD11415BA2004C2E10 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76FD5BB511415A04004C2E10 /* Sparkle.framework */; };
+		76FD5BDD11415BA2004C2E10 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76FD5BB511415A04004C2E10 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -75,7 +75,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		58A2AE571A0399A0000E517A /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = ../BWToolkit/BWToolkitFramework.framework; sourceTree = "<group>"; };
+		58A2AE571A0399A0000E517A /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = ../../../lib/BWToolkit/BWToolkitFramework.framework; sourceTree = "<group>"; };
 		761FD26D1129B7CE00A06E9B /* MilkMaid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MilkMaid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		762EAA29113ACB8E0093921D /* MilkMaidWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilkMaidWindowController.h; sourceTree = "<group>"; };
 		762EAA2A113ACB8E0093921D /* MilkMaidWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilkMaidWindowController.m; sourceTree = "<group>"; };
@@ -344,7 +344,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = JGA;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MilkMaid" */;
@@ -461,6 +461,7 @@
 				INFOPLIST_FILE = "MilkMaid-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jga.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MilkMaid;
 			};
 			name = Debug;
@@ -484,6 +485,7 @@
 				INFOPLIST_FILE = "MilkMaid-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jga.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = MilkMaid;
 			};
 			name = Release;
@@ -491,10 +493,12 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx;
@@ -507,6 +511,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PREBINDING = NO;
 				SDKROOT = macosx;
 			};

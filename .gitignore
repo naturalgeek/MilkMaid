@@ -10,6 +10,7 @@ build
 *.xcscheme
 
 MilkMaid.xcodeproj/xcuserdata/martijnv.xcuserdatad/xcschemes/xcschememanagement.plist
+MilkMaid.xcodeproj/xcuserdata/*
 
 MilkMaid.xib.original
 
